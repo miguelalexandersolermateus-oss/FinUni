@@ -1,0 +1,252 @@
+[
+  {
+    "tema": "presentacion",
+    "preguntas": [
+      "que es finuni",
+      "para que sirve finuni",
+      "quien eres",
+      "como me puedes ayudar"
+    ],
+    "respuesta": "Soy FinUni, un asistente cognitivo educativo del Proyecto CORTEX. Ayudo a estudiantes universitarios a comprender ingresos, gastos, presupuestos, becas y metas de ahorro. Funciono con reglas locales y no uso una IA externa."
+  },
+  {
+    "tema": "funcionamiento",
+    "preguntas": [
+      "como funcionas",
+      "eres una inteligencia artificial",
+      "utilizas gemini",
+      "puedes contestar sin internet"
+    ],
+    "respuesta": "Funciono con un motor de reglas, detección de intenciones y cálculos: no soy un modelo generativo ni aprendo por mi cuenta. Esta demostración puede ejecutarse sin conexión después de cargar la página."
+  },
+  {
+    "tema": "registro_ingresos",
+    "preguntas": [
+      "como registro un ingreso",
+      "como agrego mi beca",
+      "donde anoto mi salario",
+      "registrar ayuda familiar"
+    ],
+    "respuesta": "En Movimientos, pulsa «Agregar movimiento», selecciona Ingreso, escribe descripción, categoría, valor y fecha. El ingreso aparecerá en el resumen del mes correspondiente."
+  },
+  {
+    "tema": "registro_gastos",
+    "preguntas": [
+      "como registro un gasto",
+      "donde anoto transporte",
+      "como agrego alimentacion",
+      "registrar materiales de la universidad"
+    ],
+    "respuesta": "En Movimientos, pulsa «Agregar movimiento», selecciona Gasto, indica categoría, cantidad y fecha. Así podrás revisar en qué gastas y ver el gráfico por categoría."
+  },
+  {
+    "tema": "presupuesto",
+    "preguntas": [
+      "que es un presupuesto",
+      "como hacer un presupuesto",
+      "quiero organizar mi dinero",
+      "como distribuir mi beca"
+    ],
+    "respuesta": "Un presupuesto compara lo que recibes con lo que gastas. Separa primero matrícula, alimentación, transporte y vivienda; luego reserva un margen para imprevistos y, si alcanza, define un ahorro realista. Podemos partir de tus ingresos y gastos registrados."
+  },
+  {
+    "tema": "becas",
+    "preguntas": [
+      "que es una beca",
+      "como administrar una beca",
+      "consejos para una beca universitaria",
+      "como usar la ayuda economica"
+    ],
+    "respuesta": "Una beca es un apoyo para los estudios y puede cubrir gastos distintos según el programa. Revisa sus condiciones, registra el monto como ingreso cuando lo recibas y planifica matrícula, materiales, transporte y alimentación antes de otros gastos."
+  },
+  {
+    "tema": "ahorro",
+    "preguntas": [
+      "como puedo ahorrar",
+      "consejos para ahorrar",
+      "quiero empezar a ahorrar",
+      "habitos de ahorro"
+    ],
+    "respuesta": "Empieza registrando tus gastos durante varias semanas. Elige una meta concreta, revisa compras flexibles y separa un monto pequeño que no afecte alimentación, transporte ni estudios. No ahorres dinero que ya necesitas para obligaciones."
+  },
+  {
+    "tema": "metas",
+    "preguntas": [
+      "como creo una meta",
+      "donde veo mis metas",
+      "que son las metas de ahorro",
+      "quiero ahorrar para un computador"
+    ],
+    "respuesta": "En Metas de ahorro puedes crear un objetivo y registrar lo acumulado. FinUni calcula el progreso, pero esos aportes no se descuentan automáticamente del balance mensual."
+  },
+  {
+    "tema": "balance",
+    "preguntas": [
+      "cuanto dinero me queda",
+      "cual es mi balance",
+      "cual es mi saldo",
+      "cuanto tengo disponible"
+    ],
+    "respuesta": "Tu balance mensual se calcula restando gastos a ingresos; no equivale necesariamente al saldo de tu banco ni considera obligaciones pendientes."
+  },
+  {
+    "tema": "gastos",
+    "preguntas": [
+      "cuanto he gastado",
+      "mis gastos del mes",
+      "en que gasto mas",
+      "cual es mi mayor gasto"
+    ],
+    "respuesta": "Consulta la sección Resumen y el gráfico Gastos por categoría; si autorizas una pregunta sobre tus registros, también puedo resumirlos desde este chat."
+  },
+  {
+    "tema": "ingresos",
+    "preguntas": [
+      "cuanto he ganado",
+      "mis ingresos del mes",
+      "cuanto recibo al mes",
+      "cuanto me ingresa"
+    ],
+    "respuesta": "En el resumen puedes consultar los ingresos registrados en el mes. Recuerda que un ingreso futuro no debe contarse como dinero recibido hasta que lo registres."
+  },
+  {
+    "tema": "deficit",
+    "preguntas": [
+      "mis gastos superan ingresos",
+      "estoy gastando mas de lo que gano",
+      "mi balance es negativo",
+      "no me alcanza el dinero"
+    ],
+    "respuesta": "Si tus gastos superan tus ingresos, prioriza alimentación, transporte y compromisos esenciales. Revisa gastos flexibles y evita comprometer nuevos ahorros hasta equilibrar el presupuesto. Puedo ayudarte a revisar categorías."
+  },
+  {
+    "tema": "emergencias",
+    "preguntas": [
+      "que es un fondo de emergencia",
+      "cuanto guardar para imprevistos",
+      "ahorro para una emergencia",
+      "que hago ante un gasto inesperado"
+    ],
+    "respuesta": "Un fondo de emergencia sirve para gastos inesperados. Empieza con un monto alcanzable y mantenlo separado de las metas de compras. Su tamaño depende de tus gastos esenciales y de la estabilidad de tus ingresos."
+  },
+  {
+    "tema": "deudas",
+    "preguntas": [
+      "como salir de deudas",
+      "tengo una deuda",
+      "como pagar un prestamo",
+      "debo dinero"
+    ],
+    "respuesta": "Anota todas tus deudas, tasas, fechas y pagos mínimos. Prioriza compromisos urgentes y evita endeudarte para cubrir gastos frecuentes. Si hay intereses altos o no puedes pagar, busca orientación profesional o institucional."
+  },
+  {
+    "tema": "matricula",
+    "preguntas": [
+      "como pagar la matricula",
+      "ahorrar para semestre",
+      "presupuesto para universidad",
+      "gastos de la matricula"
+    ],
+    "respuesta": "Averigua el valor y la fecha exacta de la matrícula. Divide el faltante entre los meses disponibles y verifica si ese ahorro mensual cabe en tu presupuesto. Pregunta también por apoyos y calendarios de tu institución."
+  },
+  {
+    "tema": "transporte",
+    "preguntas": [
+      "gasto mucho en transporte",
+      "como ahorrar en pasajes",
+      "presupuesto de transporte",
+      "cuanto destinar a transporte"
+    ],
+    "respuesta": "Calcula pasaje de ida y vuelta por los días de clase. Compara rutas seguras, descuentos estudiantiles y horarios. Registra Transporte como categoría para conocer su peso en el mes."
+  },
+  {
+    "tema": "alimentacion",
+    "preguntas": [
+      "gasto mucho en comida",
+      "como ahorrar en alimentacion",
+      "presupuesto de comida",
+      "comer barato en la universidad"
+    ],
+    "respuesta": "Planifica comidas y compras según tus horarios, compara opciones y evita saltarte comidas por ahorrar. Registra Alimentación para detectar gastos repetidos sin descuidar tu salud."
+  },
+  {
+    "tema": "trabajo_estudio",
+    "preguntas": [
+      "como administrar mi salario",
+      "trabajo y estudio",
+      "ingresos como estudiante trabajador",
+      "tengo un empleo de medio tiempo"
+    ],
+    "respuesta": "Si estudias y trabajas, calcula el ingreso neto real, registra gastos de transporte y materiales, y deja un margen para semanas de exámenes o cambios de horario. Tu tiempo de descanso también importa."
+  },
+  {
+    "tema": "datos_privados",
+    "preguntas": [
+      "mis datos son privados",
+      "guardas mis datos",
+      "otros pueden ver mis movimientos",
+      "donde se almacena mi informacion"
+    ],
+    "respuesta": "Tus movimientos y metas se guardan en el almacenamiento local de este navegador. No hay inicio de sesión ni sincronización; otra persona que use el mismo perfil del navegador podría verlos. Puedes exportar o borrar los datos desde el pie de página."
+  },
+  {
+    "tema": "exportar",
+    "preguntas": [
+      "como exportar mis datos",
+      "puedo guardar una copia",
+      "hacer respaldo finuni",
+      "descargar mis movimientos"
+    ],
+    "respuesta": "En la parte inferior encontrarás «Exportar mis datos JSON». Conserva esa copia en un lugar privado; contiene información financiera. Para recuperarla utiliza «Importar datos JSON»."
+  },
+  {
+    "tema": "presion_social",
+    "preguntas": [
+      "mis amigos gastan mucho",
+      "me da pena no tener dinero",
+      "compararme con otros estudiantes",
+      "todos compran cosas menos yo"
+    ],
+    "respuesta": "No tienes que gastar al ritmo de otras personas. Puedes decidir límites acordes con tus posibilidades sin dar explicaciones sobre tus finanzas. Tus metas y bienestar son más importantes que las comparaciones."
+  },
+  {
+    "tema": "emociones",
+    "preguntas": [
+      "me siento preocupado por el dinero",
+      "estoy frustrado con mis gastos",
+      "me desmotiva no ahorrar",
+      "estoy enojado por mis finanzas"
+    ],
+    "respuesta": "Entiendo que organizar el dinero puede generar estrés. Vamos por partes: identifiquemos el gasto que más te preocupa, lo que necesitas cubrir primero y una acción pequeña que sí puedas controlar."
+  },
+  {
+    "tema": "sarcasmo",
+    "preguntas": [
+      "que maravilla otra vez sin dinero",
+      "genial me quede sin plata",
+      "fantastico otra vez estoy quebrado",
+      "excelente perdi todo mi presupuesto"
+    ],
+    "respuesta": "Suena frustrante quedarte sin dinero antes de fin de mes. No voy a tomar ese «qué maravilla» literalmente. Si quieres, revisemos juntos qué gasto apareció y cómo evitar que se repita."
+  },
+  {
+    "tema": "limitaciones",
+    "preguntas": [
+      "puedes enviar whatsapp",
+      "puedes conectarte a mi calendario",
+      "puedes entrar a mi banco",
+      "puedes hacer transferencias"
+    ],
+    "respuesta": "No puedo entrar a tus cuentas, enviar WhatsApp, conectarme al calendario ni hacer transacciones. Esta versión ofrece orientación y cálculos con los datos que tú registras en el navegador."
+  },
+  {
+    "tema": "cortex",
+    "preguntas": [
+      "que es proyecto cortex",
+      "que fases tiene cortex",
+      "que es la memoria de trabajo",
+      "como razona finuni"
+    ],
+    "respuesta": "CORTEX definió 6 fases en 18 semanas: perfil, percepción y atención, memoria, lenguaje, razonamiento y ética, motivación y empatía, e integración. Esta demo implementa reglas de atención, una ventana de conversación breve, clasificación de intenciones, cálculos verificables y respuestas empáticas; no constituye una IA entrenada."
+  }
+]

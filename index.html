@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#087f68" />
+  <meta name="description" content="FinUni: dashboard financiero universitario" />
+  <title>FinUni | Dashboard financiero</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="conocimiento.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#inicio"><span class="brand-icon">◈</span><span>Fin<span class="brand-accent">Uni</span><small>Finanzas universitarias</small></span></a>
+      <p class="nav-label">MENÚ PRINCIPAL</p>
+      <nav aria-label="Menú principal">
+        <a href="#inicio" class="nav-link active" data-view="inicio">▦ <span>Resumen</span></a>
+        <a href="#movimientos" class="nav-link" data-view="movimientos">⇄ <span>Movimientos</span></a>
+        <a href="#metas" class="nav-link" data-view="metas">◎ <span>Metas de ahorro</span></a>
+        <a href="#asistente" class="nav-link" data-view="asistente">✧ <span>Asistente FinUni</span></a>
+      </nav>
+      <div class="sidebar-bottom"><div class="avatar">FU</div><div><strong>Mi espacio</strong><small>Datos guardados en este navegador</small></div></div>
+    </aside>
+    <div class="main-shell">
+      <header class="topbar"><button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button><div><span class="eyebrow">MI PANEL FINANCIERO</span><h1 id="pageTitle">Resumen general</h1></div><div class="top-actions"><span class="date" id="today"></span><button class="btn btn-primary" id="quickAdd">+ Nuevo movimiento</button></div></header>
+      <main class="content">
+        <section id="inicio" class="view active" aria-label="Resumen">
+          <div class="welcome"><div><span class="welcome-pill">✦ TU DINERO, TU FUTURO</span><h2>¡Hola! Bienvenido a FinUni 👋</h2><p>Organiza tus finanzas universitarias y avanza hacia tus metas, un paso a la vez.</p><button class="btn btn-light" data-go="movimientos">Registrar movimiento →</button></div><div class="welcome-art" aria-hidden="true">🎓<span>💸</span></div></div>
+          <div class="stats"><article class="stat"><span>Ingresos del mes</span><strong id="incomeStat">$0</strong><small class="positive">↗ Entradas registradas</small></article><article class="stat"><span>Gastos del mes</span><strong id="expenseStat">$0</strong><small class="muted">↘ Salidas registradas</small></article><article class="stat"><span>Balance del mes</span><strong id="balanceStat">$0</strong><small id="balanceNote">Ingresos menos gastos</small></article><article class="stat"><span>Metas activas</span><strong id="goalsStat">0</strong><small class="muted">Objetivos de ahorro</small></article></div>
+          <div class="two-col"><section class="panel"><div class="panel-head"><div><h3>Gastos por categoría</h3><p>Distribución de gastos de este mes</p></div></div><div class="chart-layout"><canvas id="expenseChart" width="230" height="230" role="img" aria-label="Gráfico de gastos por categoría"></canvas><div id="chartLegend" class="legend"></div></div></section><section class="panel"><div class="panel-head"><div><h3>Mis metas</h3><p>Tu progreso hacia lo que importa</p></div><button class="text-btn" data-go="metas">Ver todas →</button></div><div id="goalPreview" class="goal-preview"></div></section></div>
+          <section class="panel"><div class="panel-head"><div><h3>Últimos movimientos</h3><p>Actividad financiera reciente</p></div><button class="text-btn" data-go="movimientos">Ver todos →</button></div><div id="recentTransactions"></div></section>
+        </section>
+        <section id="movimientos" class="view" aria-label="Movimientos"><div class="section-intro"><div><h2>Mis movimientos</h2><p>Registra y consulta tus ingresos y gastos.</p></div><button class="btn btn-primary" id="addMovement">+ Agregar movimiento</button></div><section class="panel"><div class="filters"><label>Tipo <select id="filterType"><option value="todos">Todos</option><option value="ingreso">Ingresos</option><option value="gasto">Gastos</option></select></label><label>Buscar <input id="searchMovement" type="search" placeholder="Descripción o categoría" /></label></div><div id="allTransactions"></div></section></section>
+        <section id="metas" class="view" aria-label="Metas de ahorro"><div class="section-intro"><div><h2>Mis metas de ahorro</h2><p>Convierte tus planes en objetivos medibles.</p></div><button class="btn btn-primary" id="addGoal">+ Crear meta</button></div><div id="allGoals" class="goal-grid"></div></section>
+        <section id="asistente" class="view" aria-label="Asistente financiero"><div class="section-intro"><div><h2>Habla con FinUni ✨</h2><p>Tu compañero de educación financiera.</p></div></div><div class="chat-card"><div class="chat-head"><div class="chat-icon">✧</div><div><strong>FinUni Asistente</strong><small>Motor cognitivo CORTEX · 100 preguntas de referencia · sin API</small></div></div><div id="chatMessages" class="chat-messages" aria-live="polite"></div><div class="suggestions"><button data-prompt="¿Cuál es mi balance de este mes?">Mi balance</button><button data-prompt="¿Cuánto he gastado este mes?">Mis gastos</button><button data-prompt="¿Cómo puedo ahorrar?">Consejos de ahorro</button><button data-prompt="¿Cómo van mis metas?">Mis metas</button></div><form id="chatForm" class="chat-form"><input id="chatInput" aria-label="Escribe tu mensaje" placeholder="Escribe una pregunta sobre tus finanzas..." required maxlength="500" autocomplete="off" /><button class="btn btn-primary" type="submit">Enviar ➤</button></form><p class="disclaimer">Chatbot de reglas con cálculos y memoria de conversación durante esta sesión; no es una IA generativa. Datos guardados únicamente en este navegador. Orientación educativa, no asesoría profesional.</p></div></section>
+      </main>
+      <footer class="footer"><span>© <span id="year"></span> FinUni · Proyecto CORTEX</span><button id="exportData" class="text-btn">Exportar mis datos JSON</button><label class="text-btn import-label" for="importData">Importar datos JSON</label><input id="importData" type="file" accept="application/json,.json" hidden /><button id="clearData" class="text-btn danger">Borrar mis datos</button></footer>
+    </div>
+  </div>
+  <dialog id="movementDialog" class="dialog"><form id="movementForm" class="dialog-form"><div class="dialog-head"><h2>Nuevo movimiento</h2><button type="button" class="close-dialog" data-close="movementDialog" aria-label="Cerrar">×</button></div><label>Tipo<select name="type" id="movementType" required><option value="gasto">Gasto</option><option value="ingreso">Ingreso</option></select></label><label>Descripción<input name="description" maxlength="70" required placeholder="Ej. Transporte a la universidad" /></label><label>Cantidad (COP)<input name="amount" type="number" min="1" max="999999999999" step="1" required placeholder="Ej. 15000" /></label><label>Categoría<select name="category" id="movementCategory" required></select></label><label>Fecha<input name="date" type="date" required /></label><div class="dialog-actions"><button type="button" class="btn btn-secondary" data-close="movementDialog">Cancelar</button><button class="btn btn-primary" type="submit">Guardar movimiento</button></div></form></dialog>
+  <dialog id="goalDialog" class="dialog"><form id="goalForm" class="dialog-form"><div class="dialog-head"><h2>Nueva meta de ahorro</h2><button type="button" class="close-dialog" data-close="goalDialog" aria-label="Cerrar">×</button></div><label>Nombre de la meta<input name="name" maxlength="70" required placeholder="Ej. Comprar computador" /></label><label>Objetivo (COP)<input name="target" type="number" min="1" max="999999999999" step="1" required /></label><label>Ahorrado actualmente (COP)<input name="saved" type="number" min="0" max="999999999999" step="1" required value="0" /></label><div class="dialog-actions"><button type="button" class="btn btn-secondary" data-close="goalDialog">Cancelar</button><button class="btn btn-primary" type="submit">Guardar meta</button></div></form></dialog>
+  <dialog id="saveDialog" class="dialog"><form id="saveForm" class="dialog-form"><div class="dialog-head"><h2>Añadir ahorro</h2><button type="button" class="close-dialog" data-close="saveDialog" aria-label="Cerrar">×</button></div><p id="savingFor"></p><input name="goalId" type="hidden" /><label>Cantidad para agregar (COP)<input name="amount" type="number" min="1" max="999999999999" step="1" required /></label><p class="hint">Este cambio actualiza el progreso de la meta. No descuenta dinero del balance automáticamente.</p><div class="dialog-actions"><button type="button" class="btn btn-secondary" data-close="saveDialog">Cancelar</button><button class="btn btn-primary" type="submit">Añadir ahorro</button></div></form></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
